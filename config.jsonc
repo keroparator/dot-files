@@ -1,0 +1,144 @@
+
+{
+    "mode": "dock",
+    "layer": "top",
+    "position": "top",
+
+    "margin-left": 5,
+    "margin-right": 5,
+    "margin-top": 5,
+    
+
+
+    "spacing": 50, // Gaps between modules (4px)
+
+
+
+    "modules-left": [
+        "hyprland/workspaces",
+    ],
+
+
+
+
+    "modules-center": [
+        "clock"
+    ],
+
+
+
+    "modules-right": [
+
+
+	"group/background",
+	"pulseaudio",
+	"backlight",
+
+	"bluetooth",
+        "network",	
+	"battery",
+    ],
+
+
+
+
+
+
+
+"clock": {
+       "tooltip-format": "<big><tt>{calendar}</tt></big>",
+       "format-alt": "{:%Y-%m-%d}"
+    },
+
+
+
+
+
+
+  "backlight": {
+    "format": ["", "", "", "", "", "", "", "", ""],
+    "format-alt": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-click": "hyprsunset --temperature 2000",
+    "on-click-right": "pkill hyprsunset"
+  },
+
+
+
+
+
+
+
+"bluetooth": {
+	"format": "",
+	"format-disabled": "",
+    	"format-connected": "",
+    	"tooltip-format": "Devices connected: {num_connections}",
+},
+
+
+
+
+
+
+
+
+
+
+"network": {
+	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+	"format-wifi": ""
+
+	
+
+
+},
+
+
+
+
+
+
+
+"pulseaudio": {
+    "width": 10,
+    "format": "\uf028",
+    "on-click": "$TERMINAL --class=Wiremix -e wiremix",
+    "on-click-right": "hyprctl dispatch exec [float] pavucontrol",
+    "tooltip-format": "Playing at {volume}%",
+    "scroll-step": 2,
+    "format-muted": "",
+},
+
+
+
+
+
+
+
+
+
+
+"group/background": {
+
+	"drawer": {
+		"transition-duration": 600,
+	},
+	
+
+	"modules": [
+	
+		"gpu",
+		"clock"
+
+	]
+
+}
+
+
+    
+
+
+
+    
+}
