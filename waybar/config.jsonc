@@ -29,55 +29,30 @@
     },
     "pulseaudio": {
         "width": 10,
-        "format": "\uf028",
-        "format-muted": "",
-        "tooltip-format": "Playing at {volume}%",
-        "scroll-step": 2,
-        "on-click": "$TERMINAL --class=Wiremix -e wiremix",
-        "on-click-right": "hyprctl dispatch exec [float] pavucontrol"
+        "format": "Volume",
+        "format-muted": "Volume Muted",
+        "tooltip": false
     },
     "backlight": {
-        "format": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "format-alt": "{percent}% {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "on-click": "hyprsunset --temperature 2000",
-        "on-click-right": "pkill hyprsunset"
+        "format": "Backlight",
+        "tooltip": false
     },
     "bluetooth": {
-        "format": "",
-        "format-disabled": "",
-        "format-connected": "",
-        "tooltip-format": "Devices connected: {num_connections}"
+        "format": "Bluetooth",
+        "format-disabled": "Bluetooth Off",
+        "format-connected": "Bluetooth On",
+        "tooltip": false
     },
     "network": {
-        "format-icons": [
-            "󰤯",
-            "󰤟",
-            "󰤢",
-            "󰤥",
-            "󰤨"
-        ],
-        "format-wifi": ""
+        "format-wifi": "Wifi",
+        "format-ethernet": "Ethernet",
+        "format-disconnected": "Disconnected",
+        "tooltip": false
     },
-    "battery": {}
+    "battery": {
+        "format": "Battery",
+        "format-charging": "Charging",
+        "format-plugged": "Plugged",
+        "tooltip": false
+    }
 }
