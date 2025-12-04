@@ -25,7 +25,7 @@
     "hyprland/workspaces": {},
     "clock": {
         "tooltip-format": "<big><tt>{calendar}</tt></big>",
-        "format-alt": "{:%d-%m-%Y}"
+        "format-alt": "{:%d  %m  %Y}"
     },
     "pulseaudio": {
         "width": 10,

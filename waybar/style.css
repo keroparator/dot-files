@@ -1,7 +1,12 @@
 window#waybar {
 	background-color: #000000;
 	color: #ffffff;
-	font-family: "Font Awesome 6 Free";
+	font-family: "Roboto", "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
 	font-weight: 900;
 	border-radius: 10px;
+}
+
+#clock,
+#workspaces {
+	font-family: "JetBrainsMono Nerd Font";
 }
