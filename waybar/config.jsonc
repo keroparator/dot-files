@@ -29,8 +29,8 @@
     },
     "pulseaudio": {
         "width": 10,
-        "format": "Volume",
-        "format-muted": "Volume Muted",
+        "format": "Volume : %{volume}",
+        "format-muted": "Volume Muted : %{volume}",
         "tooltip": false
     },
     "backlight": {
@@ -50,9 +50,9 @@
         "tooltip": false
     },
     "battery": {
-        "format": "Battery",
-        "format-charging": "Charging",
-        "format-plugged": "Plugged",
+        "format": "Battery : %{capacity}",
+        "format-charging": "Charging : %{capacity}",
+        "format-plugged": "Plugged : %{capacity}",
         "tooltip": false
     }
 }
